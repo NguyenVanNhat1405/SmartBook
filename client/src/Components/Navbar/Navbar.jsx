@@ -1,26 +1,33 @@
 import React, {useState} from 'react'
 import './Navbar.css'
-import logo from '../Assets/logo.icon'
-import cart from '../Assets/cart.icon'
+import logo from '../Assets/logo.jpg'
+import cart from '../Assets/cart.jpg'
 import { Link } from 'react-router-dom'
 
 const Navbar = () => {
   const [menu,setMenu] = useState("home");
   return (
     <div className='navbar'>
-      <div className="nav-logo">
-      <img src={logo} alt="" />
-      <p>SmartBook</p>
-      </div>
+      
       <ul className='nav-menu'>
         <li onClick={()=>{setMenu("home")}}>
-          <Link to ='/'>Home</Link>{menu==="home"?<hr/>:<></>}
+          <Link style={{ textDecoration: 'none'}} to ='/'>
+            <div className="nav-logo">
+              <img src={logo} alt="" />
+          </div>
+          </Link>{menu==="home"?<hr/>:<></>}
+          </li>
+        <li> 
+          <input type="text" placeholder="Search..." />
         </li>
-        <li onClick={()=>{setMenu("book")}}>
-          <Link to ='/book'>Book</Link>{menu==="book"?<hr/>:<></>}
+        <li onClick={()=>{setMenu("notify")}}>
+          <Link style={{ textDecoration: 'none'}} to ='/notify'>Notify</Link>{menu==="notify"?<hr/>:<></>}
         </li>
-        <li onClick={()=>{setMenu("contact")}}>
-         <Link to ='/contact'>Contact</Link> {menu==="contact"?<hr/>:<></>}
+        <li onClick={()=>{setMenu("notify")}}>
+          <Link style={{ textDecoration: 'none'}} to ='/notify'>Notify</Link>{menu==="notify"?<hr/>:<></>}
+        </li>
+        <li onClick={()=>{setMenu("notify")}}>
+          <Link style={{ textDecoration: 'none'}} to ='/notify'>Notify</Link>{menu==="notify"?<hr/>:<></>}
         </li>
       </ul>
       <div className='nav-cart'>
