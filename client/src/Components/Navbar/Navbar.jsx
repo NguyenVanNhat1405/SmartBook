@@ -8,7 +8,6 @@ const Navbar = () => {
   const [menu,setMenu] = useState("home");
   return (
     <div className='navbar'>
-      
       <ul className='nav-menu'>
         <li onClick={()=>{setMenu("home")}}>
           <Link style={{ textDecoration: 'none'}} to ='/'>
@@ -16,18 +15,18 @@ const Navbar = () => {
               <img src={logo} alt="" />
           </div>
           </Link>{menu==="home"?<hr/>:<></>}
-          </li>
+        </li>
         <li> 
-          <input type="text" placeholder="Search..." />
+          <input type="text" placeholder="Enter Name Books" />
         </li>
-        <li onClick={()=>{setMenu("notify")}}>
-          <Link style={{ textDecoration: 'none'}} to ='/notify'>Notify</Link>{menu==="notify"?<hr/>:<></>}
+        <li onClick={()=>{setMenu("home")}}>
+          <Link style={{ textDecoration: 'none'}} to ='/'><p>Home</p> </Link>{menu==="home"?<hr/>:<></>}
         </li>
-        <li onClick={()=>{setMenu("notify")}}>
-          <Link style={{ textDecoration: 'none'}} to ='/notify'>Notify</Link>{menu==="notify"?<hr/>:<></>}
+        <li onClick={()=>{setMenu("in")}}>
+          <Link style={{ textDecoration: 'none'}} to ='/in'><a>Local Books</a> </Link>{menu==="in"?<hr/>:<></>}
         </li>
-        <li onClick={()=>{setMenu("notify")}}>
-          <Link style={{ textDecoration: 'none'}} to ='/notify'>Notify</Link>{menu==="notify"?<hr/>:<></>}
+        <li onClick={()=>{setMenu("on")}}>
+          <Link style={{ textDecoration: 'none'}} to ='/on'><a>Foreign Books</a> </Link>{menu==="on"?<hr/>:<></>}
         </li>
       </ul>
       <div className='nav-cart'>

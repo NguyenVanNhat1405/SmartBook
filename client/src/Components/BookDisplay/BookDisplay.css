@@ -1,0 +1,91 @@
+.bookdisplay{
+    display: flex;
+    margin: 10px 200px;
+    background: white ;
+    border: 5px solid #BDCDD6;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.bookdisplay-left{
+    display: flex;
+    gap: 17px;
+}
+.bookdisplay-img-list{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 160px;
+    height: 200px;
+}
+.bookdisplay-main-img{
+    width: 586px;
+    height: 700px;
+}
+.bookdisplay-right{
+    margin: 0px 70px;
+    display: flex;
+    flex-direction: column;
+}
+.bookdisplay-right h1{
+    color: #3d3d3d;
+    font-size: 40px;
+    font-weight: 700;
+}
+.bookdisplay-right-star{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    margin-top: 13px;
+    color: #1c1c1c;
+    font-size: 16px;
+}
+.bookdisplay-right-prices{
+    display: flex;
+    margin: 40px 0px;
+    gap: 30px;
+    font-size: 24px;
+    font-weight: 700;
+}
+.bookdisplay-right-description{
+    display: flex;
+    margin: 10px 0px;
+    gap: 5px;
+    font-size: 20px;
+    font-weight: 500;
+}
+.bookdisplay-right-author{
+    display: flex;
+    margin: 10px 0px;
+    gap: 5px;
+    font-size: 20px;
+    font-weight: 500;
+}
+.bookdisplay-right-publisher{
+    display: flex;
+    margin: 10px 0px;
+    gap: 5px;
+    font-size: 20px;
+    font-weight: 500;
+}
+.bookdisplay-right-amount{
+    display: flex;
+    margin: 10px 0px;
+    gap: 5px;
+    font-size: 20px;
+    font-weight: 500;
+}
+.bookdisplay-right button{
+    padding: 20px 40px;
+    width: 200px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #6096B4;
+    background: whitesmoke;
+    margin-left: 10px;
+    margin-bottom: 40px;
+    border: 1px solid #6096B4;
+    border-radius: 30px;
+    outline: none;
+    cursor: pointer;
+    
+}
