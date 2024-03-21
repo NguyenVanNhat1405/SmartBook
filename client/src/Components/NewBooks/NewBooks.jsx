@@ -5,7 +5,7 @@ import Item from '../Item/Item.jsx'
 const NewBook = () => {
   return (
     <div className='new-book'>
-      <h1>NEW BOOKS</h1>
+      <h1>SÁCH MỚI RA MẮT</h1>
       <hr/>
       <div className='books'>
         {new_books.map((item,i)=>{

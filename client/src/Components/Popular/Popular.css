@@ -1,9 +1,11 @@
 .popular {
+    height: 100vh;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    gap: 10px;
-    margin-bottom: 100px;
+    gap: 15px;
+    background: linear-gradient(180deg, #BDCDD6 0%, #EEE9DA 60%);
 }
 .popular h1{
     color: #171717;
@@ -17,7 +19,9 @@
     background: #252525;
 }
 .popular-item{
+    padding-right: 150px;
+    padding-left: 50px;
     margin-top: 50px;
     display: flex;
-    gap: 30px;
+    gap: 100px;
 }

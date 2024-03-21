@@ -12,19 +12,19 @@ const Footer = () => {
         </div>
         <ul className='footer-links'>
             <li>
-                Publisher
+                Nhà Xuất Bản
             </li>
             <li>
-                Author
+                Tác Giả
             </li>
             <li>
-                Books
+                Sách
             </li>
             <li>
-                About
+                Giới Thiệu
             </li>
             <li>
-                Contact
+                Liên Hệ
             </li>
         </ul>
         <div className='footer-social-icon'>

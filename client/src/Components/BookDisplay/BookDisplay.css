@@ -76,9 +76,10 @@
 }
 .bookdisplay-right button{
     padding: 20px 40px;
-    width: 200px;
+    width: 250px;
     font-size: 16px;
     font-weight: 600;
+    margin-top: 150px;
     color: #6096B4;
     background: whitesmoke;
     margin-left: 10px;

@@ -1,6 +1,6 @@
 .hero{
     height: 100vh;
-    background: linear-gradient(180deg, #fde1ff, #e1ffea22 60%);
+    background: linear-gradient(180deg, #93BFCF, #BDCDD6 60%);
     display: flex;
 }
 .hero-left{
@@ -9,7 +9,7 @@
     flex-direction: column;
     justify-content: center;
     gap: 20px;
-    padding-left: 180px;
+    padding-left: 350px;
     line-height: 1.1;
 }
 .hero-left h2{
@@ -39,7 +39,7 @@
     height: 70px;
     border-radius: 75px;
     margin-top: 30px;
-    background: #ff4141;
+    background: black;
     color: white;
     font-size: 22px;
     font-weight: 500;
@@ -48,7 +48,9 @@
     flex:1;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
-    padding-top: 50px;
-    
+    justify-content: center;
+    padding-top: 50px;  
+    padding-right: 350px;;
+    margin-top: 150px;
+    object-fit: cover; 
 }

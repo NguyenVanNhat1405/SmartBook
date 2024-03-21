@@ -29,20 +29,20 @@ const BookDisplay = (props) => {
         </div>
         <div className='bookdisplay-right-prices'>{book.price}VND</div>
         <div className='bookdisplay-right-description'>
-            Description:
+            Chi Tiết: {book.description}
         </div>
         <div className='bookdisplay-right-author'>
-            Author:
+            Tác Giả: {book.author}
         </div>
         <div className='bookdisplay-right-publisher'>
-            Publisher:
+            Nhà Xuất Bản: {book.publisher}
         </div>
         <div className='bookdisplay-right-amount'>
             Amount:
         </div>
         <div>
-            <button>ADD TO CART</button>
-            <button>BUY</button>
+            <button>Thêm Vào Giỏ Hàng</button>
+            <button>Mua Ngay</button>
         </div>
         <p className='bookdisplay-right-category'><span></span></p>
       </div>

@@ -5,10 +5,10 @@ const Offers = () => {
   return (
     <div className='offers'>
         <div className='offers-left'>
-            <h1>Exclusive</h1>
-            <h1>Offers For You</h1>
-            <p>ONLY ON BEST BOOKS</p>
-            <button>Check Now</button>
+            <h1>Đọc Quyền</h1>
+            <h1>Dành Cho Bạn</h1>
+            <p>Chỉ Có Trên SmartBooks</p>
+            <button>Đến ngay</button>
         </div>
         <div className='offers-right'>
             <img src={exclucive_image} alt='' />

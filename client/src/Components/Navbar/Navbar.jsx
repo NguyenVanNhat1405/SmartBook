@@ -14,23 +14,23 @@ const Navbar = () => {
             <div className="nav-logo">
               <img src={logo} alt="" />
           </div>
-          </Link>{menu==="home"?<hr/>:<></>}
+          </Link>{menu==="home"}
         </li>
         <li> 
-          <input type="text" placeholder="Enter Name Books" />
+          <input type="text" placeholder="Nhập sách cần tìm...." />
         </li>
-        <li onClick={()=>{setMenu("home")}}>
-          <Link style={{ textDecoration: 'none'}} to ='/'><p>Home</p> </Link>{menu==="home"?<hr/>:<></>}
+        {/* <li onClick={()=>{setMenu("home")}}>
+          <Link style={{ textDecoration: 'none'}} to ='/'> Home</Link>{menu==="home"?<hr/>:<></>}
+        </li> */}
+        <li className="nav" onClick={()=>{setMenu("in")}}>
+          <Link style={{ textDecoration: 'none'}} to ='/in'><span>Sách Việt Nam</span></Link>{menu==="in"}
         </li>
-        <li onClick={()=>{setMenu("in")}}>
-          <Link style={{ textDecoration: 'none'}} to ='/in'><a>Local Books</a> </Link>{menu==="in"?<hr/>:<></>}
-        </li>
-        <li onClick={()=>{setMenu("on")}}>
-          <Link style={{ textDecoration: 'none'}} to ='/on'><a>Foreign Books</a> </Link>{menu==="on"?<hr/>:<></>}
+        <li className="nav" onClick={()=>{setMenu("on")}}>
+          <Link style={{ textDecoration: 'none'}} to ='/on'><span>Sách Nước Ngoài</span></Link>{menu==="on"}
         </li>
       </ul>
       <div className='nav-cart'>
-        <Link to ='/login'><button>Login</button></Link>
+        <Link to ='/login'><button>Đăng Nhập</button></Link>
         <Link to ='cart'><img src={cart} alt=''/></Link>
         <div className='nav-cart-count'>0</div>
       </div>
