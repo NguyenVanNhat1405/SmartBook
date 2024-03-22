@@ -1,20 +1,18 @@
-.popular {
-    height: 80vh;
+.relatebook{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     gap: 10px;
-    background: linear-gradient(180deg, #BDCDD6 0%, #EEE9DA 60%);
+    height: 70vh;
 }
-.popular h1{
+
+.relatebook h1{
     color: black;
     font-size: 40px;
     font-weight: 600;
 }
-
-.popular-item{
+.relatebook-item{
     margin-top: 50px;
     display: flex;
-    gap: 100px;
+    gap: 20px;
 }

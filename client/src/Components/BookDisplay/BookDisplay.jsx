@@ -1,9 +1,11 @@
-import React from 'react'
+import React ,{useContext}from 'react'
 import './BookDisplay.css'
 import starpull from '../Assets/star.png'
 import star from '../Assets/starpull.png'
+import {Context} from '../../Context/Context'
 const BookDisplay = (props) => {
-    const {book} = props;
+  const {addToCart} = useContext(Context)
+  const {book} = props;
   return (
     <div className='bookdisplay'>
       <div className='bookdisplay-left'>
@@ -41,7 +43,7 @@ const BookDisplay = (props) => {
             Amount:
         </div>
         <div>
-            <button>Thêm Vào Giỏ Hàng</button>
+            <button onClick={()=>{addToCart(book.id)}}>Thêm Vào Giỏ Hàng</button>
             <button>Mua Ngay</button>
         </div>
         <p className='bookdisplay-right-category'><span></span></p>

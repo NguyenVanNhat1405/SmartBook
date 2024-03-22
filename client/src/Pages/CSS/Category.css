@@ -3,7 +3,8 @@
 }
 .category-banner{
     display: block;
-    margin: 100px auto;
+    margin-top: 80px;
+    margin-left: 150px;
     width: 82%;
 }
 .category-IndexBook{
@@ -11,6 +12,7 @@
     margin: 0px 170px;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 50px;
 }
 .category-sort{
     padding: 10px 20px;
@@ -21,7 +23,7 @@
     font-weight: 600;
 }
 .category-allbook{
-    margin-left: 50px;
+    margin-left: 100px;
     margin-right: 100px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -32,8 +34,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 233px;
-    height: 69px;
+    width: 200px;
+    height: 60px;
     border: 1px solid black;
     border-radius: 75px;
     background: #ededed;

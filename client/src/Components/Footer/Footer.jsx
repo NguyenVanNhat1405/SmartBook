@@ -4,11 +4,15 @@ import footer_logo from '../Assets/logo.jpg'
 import facebook from '../Assets/facebook.png'
 import instagram from '../Assets/instagram.png'
 import pinterest from '../Assets/pinterest.png'
+import { Link } from 'react-router-dom'
 const Footer = () => {
+    const handleClick = () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      };
   return (
     <div className='footer'>
         <div className='footer-logo'>
-            <img src={footer_logo} alt=""/>
+            <Link style={{ textDecoration: 'none'}} onClick={handleClick}><img src={footer_logo} alt=""/></Link>
         </div>
         <ul className='footer-links'>
             <li>

@@ -1,4 +1,5 @@
 import './App.css';
+
 import Navbar from './Components/Navbar/Navbar';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './Pages/Home';
@@ -6,9 +7,11 @@ import Book from './Pages/Book';
 import Category from './Pages/Category';
 import Footer from '../src/Components/Footer/Footer'
 import Cart from './Pages/Cart';
-import LoginSignup from './Pages/LoginSignup';
+import Signup from './Pages/LoginSignup';
 import in_banner from './Components/Assets/banner_in.jpg'
 import on_banner from './Components/Assets/banner_on.jpg'
+import Login from './Pages/Login';
+
 function App() {
   return (
     <div>
@@ -24,7 +27,8 @@ function App() {
             <Route path=':bookId' element={<Book/>} />
           </Route>
           <Route path='/cart' element={<Cart/>} />
-          <Route path='/login' element={<LoginSignup/>} />
+          <Route path='/login' element={<Login/>} />
+          <Route path='/signup' element={<Signup/>} />
         </Routes>
           <Footer />
       </BrowserRouter>

@@ -16,10 +16,7 @@ const Hero = () => {
             </div>
             <p>Books</p>
             <p>cho mọi người</p>
-        </div>
-        <div className='hero-latest-btn'>
-            <div>Latest Books</div>
-            {/* <img src={handicon} alt='' /> */}
+            <button>Latest Books</button>
         </div>
       </div>
       <div>
