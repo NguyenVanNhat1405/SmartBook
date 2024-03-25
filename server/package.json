@@ -4,12 +4,27 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NguyenVanNhat1405/SmartBook.git"
+  },
+  "keywords": [
+    "nodejs",
+    "backend"
+  ],
+  "author": "nhat quan danh",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NguyenVanNhat1405/SmartBook/issues"
+  },
+  "homepage": "https://github.com/NguyenVanNhat1405/SmartBook#readme",
   "dependencies": {
-    "express": "^4.18.3"
+    "cors": "^2.8.5",
+    "express": "^4.19.1",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.2.3",
+    "multer": "^1.4.5-lts.1"
   }
 }

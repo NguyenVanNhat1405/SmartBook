@@ -5,7 +5,8 @@ import removeicon from '../../Components/Assets/remove.png'
 const CartItem = () => {
     const {getTotalCartAmount, all_books, cartItems, removeFromCart } = useContext(Context);
     return (
-        <div className='cartitems'>
+        <div className='cart'>
+            <div className='cartitems'>
             <div className='cartitems-format-main'>
                 <p>Book</p>
                 <p></p>
@@ -60,6 +61,7 @@ const CartItem = () => {
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     )
 }
